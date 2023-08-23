@@ -1,6 +1,6 @@
 import { ComponentProps } from '@stitches/react'
 import { styled } from '../styles'
-import { ElementType } from 'react'
+import { OveridableElement } from '../common'
 
 export const Heading = styled('h2', {
   fontFamily: '$default',
@@ -26,4 +26,4 @@ export const Heading = styled('h2', {
   },
 })
 
-export type HeadingProps = ComponentProps<typeof Heading> & { as: ElementType }
+export type HeadingProps = ComponentProps<typeof Heading> & OveridableElement
